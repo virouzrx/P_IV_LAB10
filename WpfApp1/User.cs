@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WpfApp1
 {
-    class User
+    class User : INotifyPropertyChanged
     {
         public User(int id, string login, string password, int points)
         {
