@@ -5,21 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApp1
+namespace LAB_10
 {
     class User : INotifyPropertyChanged
     {
-        public User(int id, string login, string password, int points)
+        public User(int id, string login, string pass, int points)
         {
             Id = id;
             Login = login;
-            Password = password;
+            Password = pass;
             Points = points;
         }
         public int Id { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-
         private int _points;
 
         public int Points
@@ -30,11 +29,14 @@ namespace WpfApp1
                 if (_points != value)
                 {
                     _points = value;
-                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Points")); //invoke? 
+                    //sprawdzić działanie ?.Invoke <--- wywołuje to funkcje, ale czym sie rozni od normalengo wywołania
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Points"));
                 }
             }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+
+        public event PropertyChangedEventHandler PropertyChanged; // za kazdym razem gdy ten event jest uruchamiany to interejs otrzymuej informacje ze dane sie zmieniły i trzeba to odświeżyć
     }
 }
+

@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace LAB_10
 {
     /// <summary>
     /// Logika interakcji dla klasy MainWindow.xaml
@@ -24,38 +24,38 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-
-            UserList.ItemsSource = users;
+            UserList.ItemsSource = _users;
+            new FIleWatcher().Show();
         }
-
-        private ObservableCollection<User> users = new ObservableCollection<User>();
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private ObservableCollection<User> _users = new ObservableCollection<User>();
+        private void AddButton(object sender, RoutedEventArgs e)
         {
-            var count = 1;
-            if (users.Any())
+            var counter = 1;
+            if (_users.Any())
             {
-                count = users.Max(x => x.Id + 1);
+                counter = _users.Max(x => x?.Id + 1 ?? 1);
             }
-
-            users.Add(new User(count, $"login{count}", $"password{count}", 0));
+            _users.Add(new User(
+                counter,
+                $"login{counter}",
+                $"password{counter}",
+                0));
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void EditButton(object sender, RoutedEventArgs e)
         {
-
-            if (users.Any())
+            if (_users.Any())
             {
-                var user = users[0];
+                var user = _users[0];
                 user.Points += 100;
             }
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void DeleteButton(object sender, RoutedEventArgs e)
         {
-            if (users.Any())
+            if (_users.Any())
             {
-                users.RemoveAt(0);
+                _users.RemoveAt(0);
             }
         }
     }

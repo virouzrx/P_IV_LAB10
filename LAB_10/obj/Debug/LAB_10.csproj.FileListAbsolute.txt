@@ -1,0 +1,16 @@
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\bin\Debug\LAB_10.exe.config
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\bin\Debug\LAB_10.exe
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\bin\Debug\LAB_10.pdb
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\LAB_10.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\MainWindow.g.cs
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\App.g.cs
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\LAB_10_MarkupCompile.cache
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\LAB_10_MarkupCompile.lref
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\MainWindow.baml
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\LAB_10.g.resources
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\LAB_10.Properties.Resources.resources
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\LAB_10.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\LAB_10.exe
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\LAB_10.pdb
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\FIleWatcher.g.cs
+C:\Users\ASUS\source\repos\LAB_10\LAB_10\obj\Debug\FIleWatcher.baml

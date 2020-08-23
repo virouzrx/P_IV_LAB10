@@ -5,17 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApp1
+namespace LAB_10
 {
-    public class FileContent : INotifyPropertyChanged
+    class FileContent : INotifyPropertyChanged
     {
-   
-
         private string _content;
-        internal static FileContent DataContext;
-
         public string Path { get; set; }
-
         public string Content
         {
             get { return _content; }
@@ -26,6 +21,7 @@ namespace WpfApp1
                     _content = value;
                     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Content"));
                 }
+
             }
         }
         public event PropertyChangedEventHandler PropertyChanged;
